@@ -1,0 +1,18 @@
+def get_number(number):
+ num = int(number)
+ if num % 2 == 0:
+  return "your number is even"
+ else:
+  return "your number is odd"
+  
+def main():
+  # firt greet the user
+  greeting = get_greet_user("Hello")
+  print(greeting)
+  
+  #Then ask for a number and check if it's even or odd
+  user_input = input("Enter a number: ")
+  result = get_number(user_input)
+  print(f"Nice, {result}")
+  
+main()
